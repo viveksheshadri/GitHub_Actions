@@ -37,3 +37,15 @@ jobs:
 #       Minimum 1 day. Maximum 90 days unless changed from the repository settings page.
 
           retention-days: 1 # optional
+          
+      - name: Add Pull Request Reviewer
+        # You may pin to the exact commit or the version.
+        # uses: AveryCameronUofR/add-reviewer-gh-action@7ea5478cbe4f97ca5ec0c1beadef8df42c0973b4
+        uses: AveryCameronUofR/add-reviewer-gh-action@1.0.4
+        with:
+          # Reviewer(s) to add, in comma separated list.
+          reviewers: "viveksheshadri"
+          # GitHub Personal Access Token
+#           token: # optional
+          # Remove a review request (defaults to false)
+#           remove: # optional
